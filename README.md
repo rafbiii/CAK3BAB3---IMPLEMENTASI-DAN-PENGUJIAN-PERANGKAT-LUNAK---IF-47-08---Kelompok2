@@ -32,8 +32,9 @@ Project: Website sederhana **“Hall of Fame Mahasiswa”**, berisi daftar nama 
 CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
 
 ## 1. Link Issue (Customer)
-- [#3 Tambahkan nama kelompok 3 di halaman utama](https://github.com/…/issues/3)
-- [#5 Tambahkan tombol About Us](https://github.com/…/issues/5)
+- [#1 Tambahkan informasi hobi mahasiswa](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/1)
+- [#2 Tambah Daftar Anggota Kelompok](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/2)
+- [#2 Tambahkan foto/logo untuk setiap kelompok](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/3)
 
 ## 2. Link Pull Request (Programmer)
 - [PR #7 – Menambahkan nama kelompok 3 di index.html](https://github.com/…/pull/7)
