@@ -1,2 +1,220 @@
-<!DOCTYPE html>
-<h1>jdhajkd</h1>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hall of Fame Mahasiswa</title>
+  <style>
+    :root{
+      --bg:#f6f8fa;
+      --card:#ffffff;
+      --accent:#0b74ff;
+      --text:#0f1720;
+      --muted:#566270;
+      --radius:12px;
+      --maxwidth:900px;
+      --gap:12px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg),#eef3f8 60%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:var(--maxwidth);
+      margin:28px auto;
+      padding:20px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3fc7ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      box-shadow:0 6px 18px rgba(11,116,255,0.12);
+      flex:0 0 56px;
+    }
+    h1{
+      font-size:1.25rem;
+      margin:0;
+    }
+    p.lead{
+      margin:6px 0 0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    /* card */
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 6px 18px rgba(15,23,32,0.06);
+    }
+
+    /* responsive table */
+    .table-wrap{
+      width:100%;
+      overflow-x:auto;
+      margin-top:12px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:540px; /* so horizontal scroll happens on very small screens */
+    }
+
+    th, td{
+      text-align:left;
+      padding:12px 14px;
+      border-bottom:1px solid #eef1f6;
+      font-size:1rem;
+    }
+
+    th{
+      background:#fbfdff;
+      font-weight:600;
+      color:var(--muted);
+      font-size:0.95rem;
+      position:sticky;
+      top:0;
+      backdrop-filter: blur(2px);
+    }
+
+    tr:hover td{
+      background: linear-gradient(90deg, rgba(11,116,255,0.02), transparent);
+    }
+
+    /* small screens: make rows slightly taller and text bigger for readability */
+    @media (max-width:520px){
+      h1{ font-size:1.1rem; }
+      th, td{ padding:14px 12px; font-size:1.05rem; }
+      .logo{ width:48px; height:48px; flex:0 0 48px; }
+      table{ min-width:420px; }
+    }
+
+    /* accessible focus for keyboard users */
+    a.button{
+      display:inline-block;
+      margin-top:12px;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      background:var(--accent);
+      color:white;
+      font-weight:600;
+    }
+    a.button:focus{ outline:3px solid rgba(11,116,255,0.24); outline-offset:3px; }
+
+    /* simple small footer */
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:0.85rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <header>
+      <div class="logo" aria-hidden="true">HF</div>
+      <div>
+        <h1>Hall of Fame Mahasiswa</h1>
+        <p class="lead">Daftar nama anggota kelompok — tampil sederhana, terbaca di desktop &amp; mobile.</p>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="list-title">
+      <h2 id="list-title" style="font-size:1rem;margin:0 0 8px 0;">Daftar Anggota</h2>
+
+      <div class="table-wrap" aria-live="polite">
+        <table role="table" aria-label="Daftar nama anggota kelompok">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Nama Lengkap</th>
+              <th scope="col">Peran</th>
+              <th scope="col">Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ahmad Dwi Pratama</td>
+              <td>Ketua</td>
+              <td>Koordinator proyek</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Rina Salsabila</td>
+              <td>Sekretaris</td>
+              <td>Penjadwalan & dokumentasi</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Denny Saputra</td>
+              <td>Anggota</td>
+              <td>Analisis data</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Putri Mahardika</td>
+              <td>Anggota</td>
+              <td>Desain & presentasi</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Fajar Nugroho</td>
+              <td>Anggota</td>
+              <td>Implementasi teknis</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Siti Nurhayati</td>
+              <td>Anggota</td>
+              <td>Pengumpulan sumber</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Aditya Pranata</td>
+              <td>Anggota</td>
+              <td>Pengujian & QA</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Melina Oktaviani</td>
+              <td>Anggota</td>
+              <td>Komunikasi eksternal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="button" href="#list-title">Kembali ke atas</a>
+    </section>
+
+    <footer>
+      &copy; 2025 Hall of Fame • Contoh halaman sederhana — sesuaikan nama &amp; peran sesuai kebutuhan.
+    </footer>
+  </main>
+</body>
+</html>
