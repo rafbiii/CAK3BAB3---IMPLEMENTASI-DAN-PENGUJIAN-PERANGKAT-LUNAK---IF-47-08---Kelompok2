@@ -13,7 +13,7 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 | No | Issue ID | PR ID | Programmer | Configuration Manager | Status     | Catatan                       |
 |----|----------|-------|------------|-----------------------|------------|-------------------------------|
 | 1  | #1       | #1    | Irgiansyah | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
-| 2  | #2       | #2    | Dandy      | Rafiq                 | Pelanggaran| Merge tanpa Issue terkait     |
+| 2  | #2       | #2    | Dandy      | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
 
 ## Temuan Utama
 - Jumlah Issue dibuat: 3
