@@ -1,196 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hall of Fame Mahasiswa</title>
   <style>
-    :root{
-      --bg:#f6f8fa;
-      --card:#ffffff;
-      --accent:#0b74ff;
-      --text:#0f1720;
-      --muted:#566270;
-      --radius:12px;
-      --maxwidth:900px;
-      --gap:12px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #d32f2f 50%, #ffffff 50%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:linear-gradient(180deg,var(--bg),#eef3f8 60%);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.2);
+      padding: 15px;
     }
 
-    .wrap{
-      max-width:var(--maxwidth);
-      margin:28px auto;
-      padding:20px;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: white;
     }
 
-    header{
-      display:flex;
-      align-items:center;
-      gap:16px;
-      margin-bottom:18px;
-    }
-    .logo{
-      width:56px;
-      height:56px;
-      border-radius:10px;
-      background:linear-gradient(135deg,var(--accent),#3fc7ff);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:white;
-      font-weight:700;
-      box-shadow:0 6px 18px rgba(11,116,255,0.12);
-      flex:0 0 56px;
-    }
-    h1{
-      font-size:1.25rem;
-      margin:0;
-    }
-    p.lead{
-      margin:6px 0 0;
-      color:var(--muted);
-      font-size:0.95rem;
+    .filter {
+      text-align: center;
+      margin: 20px 0;
     }
 
-    /* card */
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow:0 6px 18px rgba(15,23,32,0.06);
+    .filter input {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 200px;
     }
 
-    /* responsive table */
-    .table-wrap{
-      width:100%;
-      overflow-x:auto;
-      margin-top:12px;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      flex: 1;
     }
 
-    table{
-      width:100%;
-      border-collapse:collapse;
-      min-width:540px; /* so horizontal scroll happens on very small screens */
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
     }
 
-    th, td{
-      text-align:left;
-      padding:12px 14px;
-      border-bottom:1px solid #eef1f6;
-      font-size:1rem;
+    .card:hover {
+      transform: scale(1.05);
     }
 
-    th{
-      background:#fbfdff;
-      font-weight:600;
-      color:var(--muted);
-      font-size:0.95rem;
-      position:sticky;
-      top:0;
-      backdrop-filter: blur(2px);
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
     }
 
-    tr:hover td{
-      background: linear-gradient(90deg, rgba(11,116,255,0.02), transparent);
+    .card-content {
+      padding: 15px;
     }
 
-    /* small screens: make rows slightly taller and text bigger for readability */
-    @media (max-width:520px){
-      h1{ font-size:1.1rem; }
-      th, td{ padding:14px 12px; font-size:1.05rem; }
-      .logo{ width:48px; height:48px; flex:0 0 48px; }
-      table{ min-width:420px; }
+    .card-content h3 {
+      margin: 0 0 10px;
+      color: #d32f2f;
     }
 
-    /* accessible focus for keyboard users */
-    a.button{
-      display:inline-block;
-      margin-top:12px;
-      padding:8px 12px;
-      border-radius:8px;
-      text-decoration:none;
-      background:var(--accent);
-      color:white;
-      font-weight:600;
+    .hobi {
+      font-size: 14px;
+      color: #555;
     }
-    a.button:focus{ outline:3px solid rgba(11,116,255,0.24); outline-offset:3px; }
 
-    /* simple small footer */
-    footer{
-      margin-top:18px;
-      color:var(--muted);
-      font-size:0.85rem;
-      text-align:center;
+    footer {
+      background: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
-  <main class="wrap" role="main">
-    <header>
-      <div class="logo" aria-hidden="true">HF</div>
-      <div>
-        <h1>Hall of Fame Mahasiswa</h1>
-        <p class="lead">Berikut adalah daftar anggota kelompok kami </p>
+  <!-- Header -->
+  <header>
+    <h1>Hall of Fame Mahasiswa</h1>
+  </header>
+
+
+  <!-- Daftar mahasiswa -->
+  <div class="container" id="hallOfFame">
+    <div class="card" data-hobi="Fotografi, Motoran, Traveling">
+      <img src="https://picsum.photos/300/150?random=1" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Davino Arraya</h3>
       </div>
-    </header>
+    </div>
 
-    <section class="card" aria-labelledby="list-title">
-      <h2 id="list-title" style="font-size:1rem;margin:0 0 8px 0;">Daftar Anggota</h2>
-
-      <div class="table-wrap" aria-live="polite">
-        <table role="table" aria-label="Daftar nama anggota kelompok">
-          <thead>
-            <tr>
-              <th scope="col">No.</th>
-              <th scope="col">Nama Lengkap</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Ahmad Dwi Pratama</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Rina Salsabila</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Denny Saputra</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Putri Mahardika</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Fajar Nugroho</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Siti Nurhayati</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Aditya Pranata</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="card" data-hobi="Gaming, Coding, Desain">
+      <img src="https://picsum.photos/300/150?random=2" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Rafiq Labib</h3>
       </div>
-    </section>
+    </div>
 
-    <footer>
-      &copy; HEHE 
-    </footer>
-  </main>
+    <div class="card" data-hobi="Olahraga, Hiking, Musik">
+      <img src="https://picsum.photos/300/150?random=3" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Dandy Fadilla</h3>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Mendengarkan Musik, Bermain Game, Nonton Film">
+      <img src="https://picsum.photos/300/150?random=4" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Muhammad Irgiansyah</h3>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Membaca, Menulis, Traveling">
+      <img src="https://picsum.photos/300/150?random=5" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Nabila Putri Aulia</h3>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Fotografi, Musik, Gaming">
+      <img src="https://picsum.photos/300/150?random=6" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Muhammad Rafif Taufik</h3>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Olahraga, Desain, Coding">
+      <img src="https://picsum.photos/300/150?random=7" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Auliya Marifah</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Telkom University | Kelompok 2</p>
+  </footer>
+
+  <script>
+    // Fitur pencarian berdasarkan hobi
+    const searchInput = document.getElementById("search");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("keyup", function () {
+      const value = this.value.toLowerCase();
+      cards.forEach(card => {
+        const hobi = card.getAttribute("data-hobi").toLowerCase();
+        card.style.display = hobi.includes(value) ? "block" : "none";
+      });
+    });
+  </script>
 </body>
 </html>
