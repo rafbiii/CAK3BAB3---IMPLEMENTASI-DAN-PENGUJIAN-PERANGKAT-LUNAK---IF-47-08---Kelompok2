@@ -12,8 +12,8 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 ## Tabel Hasil Audit
 | No | Issue ID | PR ID | Programmer | Configuration Manager | Status       | Catatan                                |
 |----|----------|-------|------------|-----------------------|--------------|----------------------------------------|
-| 1  | #1       | #2    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
-| 2  | #2       | #1    | Dandy      | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
+| 1  | #1       | #6    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
+| 2  | #2       | #5    | Dandy      | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
 | 3  | #3       | #3    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
 
 ## Temuan Utama
