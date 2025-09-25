@@ -43,8 +43,8 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 
 ## 3. Screenshot Merge (Configuration Manager)
 - [Screenshot Merge PR #1](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request1_Issue2.png)
-- [Screenshot Merge PR #2]([link-gambar](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request6_Issue1.png))
-- [Screenshot Merge PR #3]([link-gambar](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request7_Issue3.png))
+- [Screenshot Merge PR #2](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request6_Issue1.png)
+- [Screenshot Merge PR #3](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request7_Issue3.png)
 
 ## 4. Laporan Audit (Auditor)
 - [Audit Report Kelompok 2](Laporan-Audit.md)
