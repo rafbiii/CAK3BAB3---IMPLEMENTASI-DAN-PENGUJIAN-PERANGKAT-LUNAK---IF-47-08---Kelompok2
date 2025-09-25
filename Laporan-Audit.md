@@ -4,7 +4,7 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 ## Informasi Audit
 - Tanggal Audit: 25/09/2025
 - Auditor: Davino Putra Arraya / Kelompok 2
-- Repo: - [Kelompok 2](README.md)
+- Repo: [Kelompok 2](README.md)
 
 ## Ringkasan
 Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Programmer, serta proses review oleh Configuration Manager.
