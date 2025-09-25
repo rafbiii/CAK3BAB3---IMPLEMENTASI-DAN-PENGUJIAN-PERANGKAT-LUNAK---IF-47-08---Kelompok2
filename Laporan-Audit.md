@@ -12,14 +12,15 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 ## Tabel Hasil Audit
 | No | Issue ID | PR ID | Programmer | Configuration Manager | Status     | Catatan                       |
 |----|----------|-------|------------|-----------------------|------------|-------------------------------|
-| 1  | #1       | #1    | Irgiansyah | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
-| 2  | #2       | #2    | Dandy      | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
+| 1  | #1       | #2    | Irgiansyah | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
+| 2  | #2       | #1    | Dandy      | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
+| 3  | #3       | #3    | Irgiansyah | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
 
 ## Temuan Utama
 - Jumlah Issue dibuat: 3
-- Jumlah PR di-merge: Y
-- Jumlah pelanggaran: Z
-- Kualitas commit message: Baik/Sedang/Buruk
+- Jumlah PR di-merge: 3
+- Jumlah pelanggaran: 0
+- Kualitas commit message: Sedang
 
 ## Rekomendasi
 - Pastikan setiap PR selalu terkait Issue.
