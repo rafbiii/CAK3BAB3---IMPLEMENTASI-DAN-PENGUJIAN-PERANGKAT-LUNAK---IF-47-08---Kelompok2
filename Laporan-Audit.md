@@ -10,11 +10,11 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Programmer, serta proses review oleh Configuration Manager.
 
 ## Tabel Hasil Audit
-| No | Issue ID | PR ID | Programmer | Configuration Manager | Status       | Catatan                              |
-|----|----------|-------|------------|-----------------------|--------------|--------------------------------------|
-| 1  | #1       | #2    | Irgiansyah | Rafiq                 | Belum Sesuai | Conflict di Commit Tetapi Issue Aman |
-| 2  | #2       | #1    | Dandy      | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue        |
-| 3  | #3       | #3    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue        |
+| No | Issue ID | PR ID | Programmer | Configuration Manager | Status       | Catatan                                |
+|----|----------|-------|------------|-----------------------|--------------|----------------------------------------|
+| 1  | #1       | #2    | Irgiansyah | Rafiq                 | Belum Sesuai | Conflict di Commit Tetapi Issue Sesuai |
+| 2  | #2       | #1    | Dandy      | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
+| 3  | #3       | #3    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue          |
 
 ## Temuan Utama
 - Jumlah Issue dibuat: 3
