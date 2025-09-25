@@ -1,9 +1,9 @@
 # Laporan Audit Simulasi GitHub
-CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
+CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompok 2
 
 ## Informasi Audit
-- Tanggal Audit: DD/MM/YYYY
-- Auditor: Nama Auditor / Kelompok
+- Tanggal Audit: 25/09/2025
+- Auditor: Davino Putra Arraya / Kelompok 2
 - Repo: [link ke repo]
 
 ## Ringkasan
@@ -12,8 +12,8 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 ## Tabel Hasil Audit
 | No | Issue ID | PR ID | Programmer | Configuration Manager | Status     | Catatan                       |
 |----|----------|-------|------------|-----------------------|------------|-------------------------------|
-| 1  | #3       | #7    | Kelompok 2 | CM1                   | Sesuai     | Commit rapi dan terkait Issue |
-| 2  | #5       | #8    | Kelompok 4 | CM2                   | Pelanggaran| Merge tanpa Issue terkait     |
+| 1  | #1       | #1    | Kelompok 2 | Rafiq                 | Sesuai     | Commit rapi dan terkait Issue |
+| 2  | #2       | #2    | Kelompok 4 | Rafiq                 | Pelanggaran| Merge tanpa Issue terkait     |
 
 ## Temuan Utama
 - Jumlah Issue dibuat: X
