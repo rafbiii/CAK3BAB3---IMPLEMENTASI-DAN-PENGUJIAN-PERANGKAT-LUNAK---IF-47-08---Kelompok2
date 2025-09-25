@@ -1,25 +1,26 @@
 # Laporan Audit Simulasi GitHub
-CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
+CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompok 2
 
 ## Informasi Audit
-- Tanggal Audit: DD/MM/YYYY
-- Auditor: Nama Auditor / Kelompok
-- Repo: [link ke repo]
+- Tanggal Audit: 25/09/2025
+- Auditor: Davino Putra Arraya / Kelompok 2
+- Repo: [Kelompok 2](README.md)
 
 ## Ringkasan
 Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Programmer, serta proses review oleh Configuration Manager.
 
 ## Tabel Hasil Audit
-| No | Issue ID | PR ID | Programmer | Configuration Manager | Status     | Catatan                       |
-|----|----------|-------|------------|-----------------------|------------|-------------------------------|
-| 1  | #3       | #7    | Kelompok 2 | CM1                   | Sesuai     | Commit rapi dan terkait Issue |
-| 2  | #5       | #8    | Kelompok 4 | CM2                   | Pelanggaran| Merge tanpa Issue terkait     |
+| No | Issue ID | PR ID | Programmer | Configuration Manager | Status       | Catatan                              |
+|----|----------|-------|------------|-----------------------|--------------|--------------------------------------|
+| 1  | #1       | #2    | Irgiansyah | Rafiq                 | Belum Sesuai | Conflict di commit dan terkait Issue |
+| 2  | #2       | #1    | Dandy      | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue        |
+| 3  | #3       | #3    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue        |
 
 ## Temuan Utama
-- Jumlah Issue dibuat: X
-- Jumlah PR di-merge: Y
-- Jumlah pelanggaran: Z
-- Kualitas commit message: Baik/Sedang/Buruk
+- Jumlah Issue dibuat: 3
+- Jumlah PR di-merge: 3
+- Jumlah pelanggaran: 0
+- Kualitas commit message: Sedang
 
 ## Rekomendasi
 - Pastikan setiap PR selalu terkait Issue.

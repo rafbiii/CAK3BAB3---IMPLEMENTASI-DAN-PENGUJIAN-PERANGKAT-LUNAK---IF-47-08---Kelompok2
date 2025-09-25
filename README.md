@@ -28,83 +28,13 @@ Project: Website sederhana **“Hall of Fame Mahasiswa”**, berisi daftar nama 
 4. Merge hanya boleh dilakukan oleh **Configuration Manager**.  
 5. Auditor mencatat pelanggaran dan membuat laporan.  
 
----
-
-## Format Issue (Customer)
-### Judul
-[FEATURE] Tambahkan nama kelompok 3 di halaman utama
-
-### Deskripsi
-User ingin halaman utama menampilkan nama kelompok 3.  
-
-### Acceptance Criteria
-- Nama kelompok 3 ditampilkan di halaman utama
-- Format huruf tebal
-- Berada di bawah judul utama
-
----
-
-## Format Pull Request (Programmer)
-### Deskripsi Perubahan
-- Menambahkan nama kelompok 3 di index.html
-
-### Issue Terkait
-Closes #3
-
-### Checklist
-- [x] Code diuji di local
-- [x] Tidak ada conflict dengan main
-- [ ] Sudah dicek oleh teman sekelompok
-
----
-
-## Aturan Penamaan Repo
-Setiap kelompok harus membuat repo dengan format nama:  
-CAK3BAB3 - IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK - IF-47-08 - KelompokX
-
-Contoh:  
-CAK3BAB3 - IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK - IF-47-08 - Kelompok3
-
----
-
-## Format Laporan Audit (Auditor)
-# Laporan Audit Simulasi GitHub
-CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
-
-## Informasi Audit
-- Tanggal Audit: DD/MM/YYYY
-- Auditor: Nama Auditor / Kelompok
-- Repo: [link ke repo]
-
-## Ringkasan
-Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Programmer, serta proses review oleh Configuration Manager.
-
-## Tabel Hasil Audit
-| No | Issue ID | PR ID | Programmer | Configuration Manager | Status     | Catatan                       |
-|----|----------|-------|------------|-----------------------|------------|-------------------------------|
-| 1  | #3       | #7    | Kelompok 2 | CM1                   | Sesuai     | Commit rapi dan terkait Issue |
-| 2  | #5       | #8    | Kelompok 4 | CM2                   | Pelanggaran| Merge tanpa Issue terkait     |
-
-## Temuan Utama
-- Jumlah Issue dibuat: X
-- Jumlah PR di-merge: Y
-- Jumlah pelanggaran: Z
-- Kualitas commit message: Baik/Sedang/Buruk
-
-## Rekomendasi
-- Pastikan setiap PR selalu terkait Issue.
-- Semua merge wajib melalui review Configuration Manager.
-- Commit message harus lebih deskriptif.
-
----
-
-## Format Output Akhir
 # Output Akhir Simulasi GitHub
 CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
 
 ## 1. Link Issue (Customer)
-- [#3 Tambahkan nama kelompok 3 di halaman utama](https://github.com/…/issues/3)
-- [#5 Tambahkan tombol About Us](https://github.com/…/issues/5)
+- [#1 Tambahkan informasi hobi mahasiswa](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/1)
+- [#2 Tambah Daftar Anggota Kelompok](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/2)
+- [#2 Tambahkan foto/logo untuk setiap kelompok](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/3)
 
 ## 2. Link Pull Request (Programmer)
 - [PR #7 – Menambahkan nama kelompok 3 di index.html](https://github.com/…/pull/7)
@@ -115,7 +45,7 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 - [Screenshot Merge PR #8](link-gambar)
 
 ## 4. Laporan Audit (Auditor)
-- [Audit Report Kelompok X](link-ke-file-audit.md)
+- [Audit Report Kelompok 2](Laporan-Audit.md)
 
 ---
 
