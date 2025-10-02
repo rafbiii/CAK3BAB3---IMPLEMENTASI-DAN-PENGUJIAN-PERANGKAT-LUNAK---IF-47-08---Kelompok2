@@ -19,5 +19,7 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 ## Temuan Utama
 - Jumlah Issue dibuat: 3
 - Jumlah PR di-merge: 5
+- Total PR diajukan: 7
 - Jumlah pelanggaran: 0
 - Kualitas commit message: Baik
+- Rekomendasi Auditor: CM dan Auditor membuat branch baru untuk kebersihan commit di main.
