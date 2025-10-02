@@ -14,7 +14,7 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 - CM : Rafiq Labib
 
 - Programmer : Muhammad Irgiansyah
-- Programmer : Dandy fadila
+- Programmer : Dandy fadilla
   
 - Auditor: Davino Putra Arraya
 
