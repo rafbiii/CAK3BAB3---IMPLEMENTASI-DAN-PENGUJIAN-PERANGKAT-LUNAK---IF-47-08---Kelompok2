@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hall of Fame Mahasiswa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #d32f2f);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.2);
+      padding: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: white;
+    }
+
+    .filter {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .filter input {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      color: #d32f2f;
+    }
+
+    .hobi {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Hall of Fame Mahasiswa</h1>
+  </header>
+  <!-- Daftar mahasiswa -->
+  <div class="container" id="hallOfFame">
+    <div class="card" data-hobi="Fotografi, Memasak, Traveling">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Osama_bin_Laden_portrait_%283x4_cropped_b%29.jpg" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Davino Arraya</h3>
+        <p class="hobi">Hobi: Fotografi, Memasak, Traveling</p>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Gaming, Coding, Desain">
+      <img src="https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/163/2025/07/26/20250726_1147221-187266813.jpg" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Rafiq Labib</h3>
+        <p class="hobi">Hobi: Gaming, Coding, Desain</p>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Olahraga, Hiking, Musik">
+      <img src="https://www.biografiku.com/wp-content/uploads/2011/09/Andre-Taulany1.jpg" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Dandy Fadilla</h3>
+        <p class="hobi">Hobi: Olahraga, Hiking, Musik</p>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Mendengarkan Musik, Bermain Game, Nonton Film">
+      <img src="https://cdn.antaranews.com/cache/1200x800/2011/04/20110409022242sule-sutisna.jpg" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Muhammad Irgiansyah</h3>
+        <p class="hobi">Hobi: Mendengarkan Musik, Bermain Game, Nonton Film</p>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Membaca, Menulis, Traveling">
+      <img src="https://i.pinimg.com/474x/63/ed/c3/63edc3c7fc54ebd4118cd638c424b2b7.jpg" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Nabila Putri Aulia</h3>
+        <p class="hobi">Hobi: Membaca, Menulis, Traveling</p>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Fotografi, Musik, Gaming">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknIQgTusMZgwJgm2b3ZKV3jMNixdmCxSBaQ&s" alt="Foto Mahasiswa">
+      <div class="card-content">
+        <h3>Muhammad Rafif Taufik</h3>
+        <p class="hobi">Hobi: Fotografi, Musik, Gaming</p>
+      </div>
+    </div>
+
+    <div class="card" data-hobi="Olahraga, Desain, Coding">
+      <img src="https://i.pinimg.com/474x/45/b7/16/45b716a060b306d3721abedcb0832cc7.jpg" alt="Foto Mahasiswa">
+      <div class="card-content">
+          <h3>Auliya Marifah</h3>
+        <p class="hobi">Hobi: Olahraga, Desain, Coding</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Telkom University | Kelompok 2</p>
+  </footer>
+
+  <script>
+    // Fitur pencarian berdasarkan hobi
+    const searchInput = document.getElementById("search");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("keyup", function () {
+      const value = this.value.toLowerCase();
+      cards.forEach(card => {
+        const hobi = card.getAttribute("data-hobi").toLowerCase();
+        card.style.display = hobi.includes(value) ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
