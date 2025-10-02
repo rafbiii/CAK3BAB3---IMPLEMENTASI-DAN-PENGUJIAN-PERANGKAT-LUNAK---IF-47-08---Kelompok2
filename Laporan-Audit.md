@@ -31,7 +31,7 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 
 ## Temuan Utama
 - Jumlah Issue dibuat: 4
-- Jumlah PR di-merge: 6
+- Jumlah PR di-merge: 5
 - Total PR diajukan: 7
 - Jumlah pelanggaran: 0
 - Kualitas commit message: Baik
