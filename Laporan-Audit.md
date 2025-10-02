@@ -21,8 +21,3 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 - Jumlah PR di-merge: 3
 - Jumlah pelanggaran: 0
 - Kualitas commit message: Sedang
-
-## Rekomendasi
-- Pastikan setiap PR selalu terkait Issue.
-- Semua merge wajib melalui review Configuration Manager.
-- Commit message harus lebih deskriptif.
