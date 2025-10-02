@@ -51,9 +51,3 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 
 ---
 
-## Ringkasan Akhir
-- Total Issue dibuat: 3
-- Total PR diajukan: 7
-- Total PR di-merge: 3
-- Pelanggaran prosedur: 0
-- Rekomendasi Auditor: CM dan Auditor membuat branch baru untuk kebersihan commit di main.
