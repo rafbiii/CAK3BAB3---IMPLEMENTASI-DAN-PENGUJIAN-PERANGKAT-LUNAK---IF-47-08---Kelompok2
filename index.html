@@ -9,7 +9,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #d32f2f);
+      background: linear-gradient(to bottom, #d32f2f, #f44336);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -22,24 +22,18 @@
       gap: 15px;
       background: rgba(0,0,0,0.2);
       padding: 15px;
+      position: relative;
+    }
+    header .logo {
+      height: 70px;
+      position: absolute;
+      left: 20px;
     }
 
     header h1 {
       margin: 0;
       font-size: 24px;
       color: white;
-    }
-
-    .filter {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .filter input {
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      width: 200px;
     }
 
     .container {
@@ -56,6 +50,8 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
     }
 
     .card:hover {
@@ -64,12 +60,13 @@
 
     .card img {
       width: 100%;
-      height: 150px;
+      height: 250px;
       object-fit: cover;
     }
 
     .card-content {
       padding: 15px;
+      flex: 1;
     }
 
     .card-content h3 {
@@ -80,6 +77,39 @@
     .hobi {
       font-size: 14px;
       color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border-top: 1px solid #eee;
+    }
+
+    .github-btn img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .github-btn img:hover {
+      opacity: 0.7;
+    }
+
+    .detail-btn {
+      background: transparent;
+      border: none;
+      color: #d32f2f;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .detail-btn:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -94,15 +124,25 @@
 <body>
   <!-- Header -->
   <header>
+    <img src="https://lombasi.telkomuniversity.ac.id/assets/img/logos/logo_telyu_lanskap.png"
+       alt="Telkom University" class="logo">
     <h1>Hall of Fame Mahasiswa</h1>
   </header>
+
   <!-- Daftar mahasiswa -->
-  <div class="container" id="hallOfFame">
+  <div class="container" id="hallOffFame">
+
     <div class="card" data-hobi="Fotografi, Memasak, Traveling">
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Osama_bin_Laden_portrait_%283x4_cropped_b%29.jpg" alt="Foto Mahasiswa">
       <div class="card-content">
         <h3>Davino Arraya</h3>
         <p class="hobi">Hobi: Fotografi, Memasak, Traveling</p>
+      </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/DavinoArraya" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Davino Arraya')">Detail</button>
       </div>
     </div>
 
@@ -112,6 +152,12 @@
         <h3>Rafiq Labib</h3>
         <p class="hobi">Hobi: Gaming, Coding, Desain</p>
       </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/rafbiii" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Rafiq Labib')">Detail</button>
+      </div>
     </div>
 
     <div class="card" data-hobi="Olahraga, Hiking, Musik">
@@ -119,6 +165,12 @@
       <div class="card-content">
         <h3>Dandy Fadilla</h3>
         <p class="hobi">Hobi: Olahraga, Hiking, Musik</p>
+      </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/Dandyfd12" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Dandy Fadilla')">Detail</button>
       </div>
     </div>
 
@@ -128,6 +180,12 @@
         <h3>Muhammad Irgiansyah</h3>
         <p class="hobi">Hobi: Mendengarkan Musik, Bermain Game, Nonton Film</p>
       </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/ValdeRaz" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Muhammad Irgiansyah')">Detail</button>
+      </div>
     </div>
 
     <div class="card" data-hobi="Membaca, Menulis, Traveling">
@@ -135,6 +193,12 @@
       <div class="card-content">
         <h3>Nabila Putri Aulia</h3>
         <p class="hobi">Hobi: Membaca, Menulis, Traveling</p>
+      </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/putriinbl" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Nabila Putri Aulia')">Detail</button>
       </div>
     </div>
 
@@ -144,15 +208,28 @@
         <h3>Muhammad Rafif Taufik</h3>
         <p class="hobi">Hobi: Fotografi, Musik, Gaming</p>
       </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/rafiftaufiq" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Muhammad Rafif Taufik')">Detail</button>
+      </div>
     </div>
 
     <div class="card" data-hobi="Olahraga, Desain, Coding">
       <img src="https://i.pinimg.com/474x/45/b7/16/45b716a060b306d3721abedcb0832cc7.jpg" alt="Foto Mahasiswa">
       <div class="card-content">
-          <h3>Auliya Marifah</h3>
+        <h3>Auliya Marifah</h3>
         <p class="hobi">Hobi: Olahraga, Desain, Coding</p>
       </div>
+      <div class="card-actions">
+        <a class="github-btn" href="https://github.com/auliyamaa" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <button class="detail-btn" onclick="goToDetail('Auliya Marifah')">Detail</button>
+      </div>
     </div>
+
   </div>
 
   <!-- Footer -->
@@ -161,17 +238,10 @@
   </footer>
 
   <script>
-    // Fitur pencarian berdasarkan hobi
-    const searchInput = document.getElementById("search");
-    const cards = document.querySelectorAll(".card");
-
-    searchInput.addEventListener("keyup", function () {
-      const value = this.value.toLowerCase();
-      cards.forEach(card => {
-        const hobi = card.getAttribute("data-hobi").toLowerCase();
-        card.style.display = hobi.includes(value) ? "block" : "none";
-      });
-    });
+    // Navigasi ke halaman detail
+    function goToDetail(nama) {
+      window.location.href = `detail.html?nama=${encodeURIComponent(nama)}`;
+    }
   </script>
 </body>
 </html>
