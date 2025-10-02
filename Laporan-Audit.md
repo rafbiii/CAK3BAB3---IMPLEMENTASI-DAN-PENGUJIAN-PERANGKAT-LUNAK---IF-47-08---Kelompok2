@@ -6,6 +6,18 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 - Auditor: Davino Putra Arraya / Kelompok 2
 - Repo: [Kelompok 2](README.md)
 
+## Informasi Kelompok
+- Customer : Nabila Putri Aulia
+- Customer : Rafif Taufiq
+- Customer : Aulia Marifah
+
+- CM : Rafiq Labib
+
+- Programmer : Muhammad Irgiansyah
+- Programmer : Dandy fadila
+  
+- Auditor: Davino Putra Arraya
+
 ## Ringkasan
 Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Programmer, serta proses review oleh Configuration Manager.
 
