@@ -1,4 +1,4 @@
-# CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
+# CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompok2
 
 ## Deskripsi
 Repository ini digunakan untuk simulasi kolaborasi GitHub dalam mata kuliah **RPL – Implementasi dan Pengujian Perangkat Lunak (CAK3BAB3)**.  
@@ -29,7 +29,7 @@ Project: Website sederhana **“Hall of Fame Mahasiswa”**, berisi daftar nama 
 5. Auditor mencatat pelanggaran dan membuat laporan.  
 
 # Output Akhir Simulasi GitHub
-CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – KelompokX
+CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompok2
 
 ## 1. Link Issue (Customer)
 - [#1 Tambahkan informasi hobi mahasiswa](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/1)
@@ -37,21 +37,17 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 - [#2 Tambahkan foto/logo untuk setiap kelompok](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/issues/3)
 
 ## 2. Link Pull Request (Programmer)
-- [PR #7 – Menambahkan nama kelompok 3 di index.html](https://github.com/…/pull/7)
-- [PR #8 – Menambahkan tombol About Us](https://github.com/…/pull/8)
+- [PR #5 – Menambahkan daftar nama kelompok 2 di website.html](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/pull/5)
+- [PR #6 – Menambahkan hoki tiap anggota kelompok di website.html](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/pull/6)
+- [PR #8 – Menambahkan foto/logo untuk tiap anggota kelompok di website.html](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/pull/8)
 
 ## 3. Screenshot Merge (Configuration Manager)
-- [Screenshot Merge PR #7](link-gambar)
-- [Screenshot Merge PR #8](link-gambar)
+- [Screenshot Merge PR #1](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request1_Issue2.png)
+- [Screenshot Merge PR #2](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request6_Issue1.png)
+- [Screenshot Merge PR #3](https://github.com/rafbiii/CAK3BAB3---IMPLEMENTASI-DAN-PENGUJIAN-PERANGKAT-LUNAK---IF-47-08---Kelompok2/blob/main/Merge_Pull%20Request8_Issue3.png)
 
 ## 4. Laporan Audit (Auditor)
 - [Audit Report Kelompok 2](Laporan-Audit.md)
 
 ---
 
-## Ringkasan Akhir
-- Total Issue dibuat: X
-- Total PR diajukan: Y
-- Total PR di-merge: Z
-- Pelanggaran prosedur: N
-- Rekomendasi Auditor: …
