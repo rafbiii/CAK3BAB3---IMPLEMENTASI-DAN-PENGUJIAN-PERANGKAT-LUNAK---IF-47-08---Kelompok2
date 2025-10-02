@@ -27,7 +27,7 @@ Audit dilakukan terhadap Issue, Pull Request, dan Commit yang dibuat oleh Progra
 | 1  | #1       | #6    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue                                           |
 | 2  | #2       | #5    | Dandy      | Rafiq                 | Sesuai       | Sempat Mengalami Conflict tetapi sudah diperbaiki dan terkait Issue     |
 | 3  | #3       | #8    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan Sedikit Ketidaksesuaian Dengan Issue                    |
-| 4  | #4       | #9    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue                                           |
+| 4  | #9       | #10    | Irgiansyah | Rafiq                 | Sesuai       | Commit rapi dan terkait Issue                                           |
 
 ## Temuan Utama
 - Jumlah Issue dibuat: 4
